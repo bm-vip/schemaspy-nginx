@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  schemaspy-nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: schemaspy-nginx:latest
+    ports:
+      - "4000:80"
